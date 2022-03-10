@@ -1,0 +1,104 @@
+@charset "utf-8";
+/*header*/
+.header{
+  width: 100%;
+  height: auto;
+  /* position: relative; */
+  /* padding: 20px 0; */
+  box-shadow: 0 1px 2px #000;
+  background-color: #555;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+.header .inner-header{
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid; */
+  box-sizing: border-box;
+}
+.header .inner-header .nav{
+  flex: 0 1 1280px;
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid; */
+  /* box-sizing: border-box; */
+  background-color: #fff;
+}
+.header .inner-header .nav h1.logo{
+  flex: 0 0 120px;
+  height: auto;
+  margin: 10px 0;
+}
+.header .inner-header .nav h1.logo img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.header .inner-header .nav .gnb{
+  flex: 0 1 500px;
+  /* border: 1px solid; */
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+.header .inner-header .nav .gnb>ul{
+  display: flex;
+  justify-content: space-between;
+}
+.header .inner-header .nav .gnb>ul>li{
+  flex: 1;
+  text-align: center;
+  line-height: 60px;
+  /* border: 1px solid; */
+  box-sizing: border-box;
+  position: relative;
+  z-index: 10;
+}
+header .inner-header .nav .gnb>ul>li>a{
+  font-size: 14px;
+  position: relative;
+  
+}
+.header .inner-header .nav .gnb>ul>li ul.sub{
+  /* color: #000; */
+  background-color: #fff;
+  display: none;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+.header .inner-header .nav .gnb>ul>li ul.sub a{
+  display: block;
+  line-height: 40px;
+  background-color: #fff;
+  color: #000;
+  font-size: 14px;
+}
+.header .inner-header .nav .gnb>ul>li:hover{
+  background-color: rgb(245, 204, 116);
+}
+.header .inner-header .nav .gnb>ul>li ul.sub a:hover{
+  color: #fff;
+  background-color: #888;
+}
+.header .inner-header .nav .gnb>ul>li:hover ul.sub {
+  display: block;
+}
+@media only screen and (max-width:768px){
+  .header .inner-header{
+    padding: 10px 0;
+  }
+  
+}
+@media only screen and (max-width:640px){
+  .header .inner-header{
+    padding: 0;
+  }
+  .header .inner-header .nav{
+    border: 0;
+  }
+  .header .inner-header .nav .gnb{
+    display: none;
+  }
+}

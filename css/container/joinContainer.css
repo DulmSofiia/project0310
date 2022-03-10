@@ -1,0 +1,149 @@
+/*JoinContainer*/
+.container{
+  /* width: 100%; */
+  /* height: auto; */
+  margin-top: 100px;
+ 
+}
+.container .inner-container{
+  
+  /* padding: 100px 0; */
+}
+.container .inner-container .join{
+  
+  /* box-shadow: 0 1px 2px #888; */
+}
+.container .inner-container .join .inner-join{
+  display: flex;
+  justify-content: center;
+  height: calc( 100vh - 100px - 100px);
+  align-items: center;
+}
+.container .inner-container .join .inner-join .join-con{
+  flex: 0 1 700px;
+  /* border: 1px solid rgb(253, 234, 194); */
+  box-sizing: border-box;
+  padding: 20px 40px;
+}
+.container .inner-container .join .inner-join .join-con h1.title{
+  line-height: 30px;
+  padding: 20px 0;
+  text-align: center;
+  background-color: rgb(245, 204, 116);
+  color: #fff;
+  font-weight: 400;
+  box-shadow: 0px 1px 2px darkgoldenrod;
+}
+.container .inner-container .join .inner-join .join-con .join-form{
+  /* border: 1px solid; */
+  box-shadow: 0 1px 2px #888;
+  box-sizing: border-box;
+  padding: 20px;
+  
+}
+.container .inner-container .join .inner-join .join-con .join-form ul{
+  /* border: 1px solid; */
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.container .inner-container .join .inner-join .join-con .join-form ul li{
+  /* border: 1px solid; */
+  box-sizing: border-box;
+  display: flex;
+  line-height: 30px;
+  padding: 5px 0px;
+} 
+.container .inner-container .join .inner-join .join-con .join-form ul li label{
+  flex: 0 0 100px;
+  background-color: rgb(245, 204, 116);
+  border-radius: 5px;
+  color: rgb(80, 80, 80);
+  font-size: 14px;
+  text-align: center;
+}
+.container .inner-container .join .inner-join .join-con .join-form ul li .right-input{
+  flex: 1;
+  /* border: 1px solid #00f; */
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+.container .inner-container .join .inner-join .join-con .join-form ul li:not(.li1){
+  background-color: #ccc;
+  border-radius: 5px;
+}
+.container .inner-container .join .inner-join .join-con .join-form ul li.li1 input{
+  width: 100%;
+  height: 26px;
+  padding: 0 5px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+}
+.container .inner-container .join .inner-join .join-con .join-form ul li.li1 input:focus{
+  outline:  2px dashed rgb(201, 132, 195);
+}
+.container .inner-container .join .inner-join .join-con .join-form ul li:last-child{
+  background-color: rgb(245, 204, 116);
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 0;
+  border-radius: 0 0 5px 5px;
+}
+.container .inner-container .join .inner-join .join-con .join-form ul li:last-child input{
+  flex: 0 1 100px;
+  display: block;
+  border: 0;
+  padding: 5px 0;
+  background-color: slategray;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.container .inner-container .join .inner-join .join-con .join-form ul li:last-child input:hover{
+  background-color: cornflowerblue;
+  color: rgb(37, 26, 12);
+}
+.container .inner-container .join .inner-join .join-con .join-form ul li.li2 .right-input{
+  /* background-color: tan; */
+}
+.container .inner-container .join .inner-join .join-con .join-form ul li.li2 .right-input select{
+  border: 1px dashed #ccc;
+  font-size: 12px;
+  height: 20px;
+}
+.container .inner-container .join .inner-join .join-con .join-form ul li.li2 .right-input select:focus{
+  outline:  2px dashed cornflowerblue;
+}
+.container .inner-container .join .inner-join .join-con .join-form ul li.li2 .right-input input{
+  width: 50px;
+  border: 1px dashed #ccc;
+  font-size: 12px;
+  height: 20px;
+  text-align: center;
+}
+.container .inner-container .join .inner-join .join-con .join-form ul li.li2 .right-input input:focus{
+  outline:  2px dashed cornflowerblue;
+}
+.container .inner-container .join .inner-join .join-con .join-form ul li.li3 .right-input input[type=radio]{
+  width: 20px;
+  height: 20px;
+}
+.container .inner-container .join .inner-join .join-con .join-form ul li.li3 .right-input input[type=radio]:focus{
+  outline:  2px dashed cornflowerblue;
+}
+@media only screen and (max-width:768px){
+  .container .inner-container .join .inner-join{
+    height: calc( 100vh - 100px - 100px + 20px);
+    
+  }
+}
+@media only screen and (max-width:640px){
+  .container .inner-container .join .inner-join{
+    height: calc( 100vh - 100px - 100px + 20px + 20px);
+
+  }
+}
